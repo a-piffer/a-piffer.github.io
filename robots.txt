@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /resources/AndersonPiffer_CV.pdf
+Disallow: /resources/AndersonPiffer_CV.pdf
+Allow: /images/siteicon.jpg
+Disallow: /images

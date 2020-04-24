@@ -1,0 +1,14 @@
+{
+  "lang": "en",
+  "background_color": "#1b1d1f",
+  "name": "Anderson Piffer Portfolio",
+  "short_name": "apiffer.com",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "appicon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
