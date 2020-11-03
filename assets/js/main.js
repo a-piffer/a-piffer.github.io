@@ -51,13 +51,19 @@
 		}
 
 	// Footer.
+		var $info = $('#info');
+		var $avatar = $('#avatar');
+		var $bio = $('#bio');
 		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
+			$('#major').insertBefore($avatar);
+			$('#contact').insertAfter($info);
 		});
 
 		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
+			$('#major').insertBefore($bio);
+			$('#contact').appendTo($info);
 		});
+	
 
 	// Header.
 
