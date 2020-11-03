@@ -2722,22 +2722,6 @@ input, select, textarea {
 					line-height: 1.75em;
 				}
 
-		/* Header */
-
-			#header {
-				padding: 2.25em 1.5em;
-			}
-
-				#header h1 {
-					font-size: 1.35em;
-				}
-
-		/* Footer */
-
-			#footer .copyright li {
-				display: block;
-			}
-
 		/* Main */
 
 			#main {
@@ -2751,14 +2735,11 @@ input, select, textarea {
 				}
 				
 			#avatar img {
-				width: 50%;
+				width: 100%;
+				max-width: 150px;
 				margin-bottom: 15px;
 			}
-			
-			#avatar, #info {
-				display: inline;
-			}
-			
+						
 			#info h2 {
 				text-align: center;
 			}
@@ -2767,6 +2748,10 @@ input, select, textarea {
 				text-align: justify;
 			}
 			
+			.row {
+				padding-left: 10%;
+				padding-right: 10%;
+			}
 				
 
 		/* Poptrox */
@@ -2785,7 +2770,10 @@ input, select, textarea {
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
-
+			h1, h2, h3, p {
+				line-height: 1.2em;
+			}
+			
 		/* Header */
 
 			#header {
@@ -2800,5 +2788,20 @@ input, select, textarea {
 			#avatar, #info {
 				width:100%;
 				display: inline; 
+			}
+			
+			#avatar img {
+				max-width: 120px;
+			}
+			
+			.row {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+		/* Footer */
+
+			#footer .copyright li {
+				display: block;
 			}
 	}
