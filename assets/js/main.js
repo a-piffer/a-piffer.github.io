@@ -8,18 +8,8 @@
 
 	var $window = $(window),
 		$body = $('body'),
-		$header = $('#header'),
 		$footer = $('#footer'),
-		$main = $('#main'),
-		settings = {
-
-			// Parallax background effect?
-				parallax: true,
-
-			// Parallax factor (lower = more intense, higher = less intense).
-				parallaxFactor: 20
-
-		};
+		$main = $('#main');
 
 	// Breakpoints.
 		breakpoints({
@@ -50,7 +40,7 @@
 
 		}
 
-	// Footer.
+	// Reorganize the content from the biography according to screen ratio
 		var $info = $('#info');
 		var $avatar = $('#avatar');
 		var $bio = $('#bio');
@@ -64,60 +54,48 @@
 			$('#contact').appendTo($info);
 		});
 	
+	// Autoplay animations in mobile screen
+		if (browser.mobile) {
+			//breakpoints.on('<=small', function() {
+				const config = { rootMargin: '-49% 0px -51% 0px', threshold: [0, 1] };
+				observer = new IntersectionObserver((entries) => {
+				  entries.forEach(entry => {
+					if (entry.intersectionRatio > 0) {
+						entry.target.currentTime = 0;
+						entry.target.play();	
+						entry.target.classList.add('isFocus');
+					} else {
+						entry.target.pause();
+						entry.target.classList.remove('isFocus');
+					}
+				  });
+				}, config);
 
-	// Header.
-
-		// Parallax background.
-
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-				if (browser.name == 'ie'
-				||	browser.mobile)
-					settings.parallax = false;
-
-			if (settings.parallax) {
-
-				breakpoints.on('<=medium', function() {
-
-					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
-
+				document.querySelectorAll('.lazyvideo').forEach((item) => {
+				  observer.observe(item);
 				});
+			//});
+		}
+		else {
+			$(document).ready(function() {
+			  $(".lazyvideo").on("mouseover", function(event) {
+				this.currentTime = 0;
+				this.play();
+				this.classList.add('isFocus');
 
-				breakpoints.on('>medium', function() {
-
-					$header.css('background-position', 'left 0px');
-
-					$window.on('scroll.strata_parallax', function() {
-						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-					});
-
-				});
-
-				$window.on('load', function() {
-					$window.triggerHandler('scroll');
-				});
-
-			}
-
-	// Main Sections: Two.
-
-		// Lightbox gallery.
-/* 			$window.on('load', function() {
-
-				$('#two').poptrox({
-					caption: function($a) { return $a.next('h3').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-				});
-
-			}); */
-	// Copy to Text Function
+			  }).on('mouseout', function(event) {
+				this.pause();
+				this.classList.remove('isFocus');
+			  });
+			})
+		}
+	
+	
+	// Show all titles in the category list
+	$('.hiddenlist').next('ul').hide();
+	$(".hiddenlist").click(function(){
+	  $(this).next("ul").slideToggle();
+	  $(this).hide();
+	});
+		
 })(jQuery);
