@@ -40,7 +40,7 @@
 
 		}
 
-	// Reorganize the content from the biography according to screen ratio
+	// Reorganize the Header content according to the screen ratio
 		var $info = $('#info');
 		var $avatar = $('#avatar');
 		var $bio = $('#bio');
@@ -92,21 +92,9 @@
 	
 	
 	// Show all titles in the category list
-		
-	/* 	breakpoints.on('>small', function() {
-			$('.hiddenlist').hide();
-			$('.hiddenlist').next("ul").toggle();
-		});
-		
-		breakpoints.on('<=small', function() {
-			$('.hiddenlist').show();
-			$('.hiddenlist').next('ul').hide();
-		}); */
-
-		
-		$(".hiddenlist").click(function(){
-		  $(this).next("ul").slideToggle();
-		  $(this).hide();
-		});
+	$(".hiddenlist").click(function(){
+		$(this).next("ul").slideToggle();
+		$(this).hide();
+	});
 		
 })(jQuery);
