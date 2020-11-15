@@ -2358,6 +2358,35 @@ input, select, textarea {
 			  height: 100%;
 			  float: left;
 			}
+			
+	.games-counter {
+		text-align:right;
+		margin-right: 5%;
+	}
+	
+	.count h1 {
+		font-size: 6em; 
+		line-height: 1em; 
+		margin-top: 25%;
+		margin-bottom: 0;
+	}
+	
+	.count h2 {
+		padding: 0;
+	}
+	
+	.countlabel p {
+		font-size: 1.15em; 
+		text-align: right;
+	}
+	
+	#releases .hiddenlist {
+		display: none;
+	}
+	
+	#releases .row ul {
+		display: inline;
+	}
 
 /* Touch */
 
@@ -2417,6 +2446,41 @@ input, select, textarea {
 		
 		#avatar img {
 			width: 100%;
+		}
+		
+		
+		.games-counter {
+			max-width: 85%;
+			padding: 0;
+			margin: auto;
+		}
+		
+		.count {
+			display: block;
+			overflow: left;
+			margin: auto;
+			text-align: center;
+			width: 100%;
+		}
+			.count h1 {
+				display:inline-block; 
+				overflow: left;
+				margin: 0 10px 0 -10%;
+				font-size: 5em;
+			}
+			.count h2 {
+				display:inline-block; 
+				overflow: right; 
+				width: 2%;
+			}
+		
+		.countlabel {
+			display:block; 
+			overflow: center;
+			width: 100%;
+		}
+		.countlabel p {
+			text-align: center;			
 		}
 	}
 
@@ -2503,10 +2567,31 @@ input, select, textarea {
 				min-width: 50%;
 			}
 			
+			#releases .hiddenlist {
+				display: inline;
+			}
+			
 			#releases .row ul {
+				display: none;
 				text-align: left;
 				margin-left: 1em;
 			}
+			
+			.count h1 {
+				margin-left: -17.50%;
+				font-size: 4em;
+			}
+			
+			.countlabel {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				margin-left: 4%;
+			}
+			
+			.countlabel p {
+				font-size: 1.1em;
+			}			
 			
 		/* Poptrox */
 

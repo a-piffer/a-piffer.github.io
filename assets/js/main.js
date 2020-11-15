@@ -92,10 +92,21 @@
 	
 	
 	// Show all titles in the category list
-	$('.hiddenlist').next('ul').hide();
-	$(".hiddenlist").click(function(){
-	  $(this).next("ul").slideToggle();
-	  $(this).hide();
-	});
+		
+	/* 	breakpoints.on('>small', function() {
+			$('.hiddenlist').hide();
+			$('.hiddenlist').next("ul").toggle();
+		});
+		
+		breakpoints.on('<=small', function() {
+			$('.hiddenlist').show();
+			$('.hiddenlist').next('ul').hide();
+		}); */
+
+		
+		$(".hiddenlist").click(function(){
+		  $(this).next("ul").slideToggle();
+		  $(this).hide();
+		});
 		
 })(jQuery);
