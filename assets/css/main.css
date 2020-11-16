@@ -1948,7 +1948,12 @@ input, select, textarea {
 				margin-top: 0;
 				padding-top: 0;
 			}
-			
+	mark {
+		background-color: darkgrey;
+		color: white;
+		padding: 2px 7px;
+	}
+
 /* Header */
 	#major h2 {
 		font-size: 2em;	
@@ -2049,19 +2054,20 @@ input, select, textarea {
 	.games-counter {
 		text-align:right;
 		margin-right: 5%;
+		padding-top: 5%;
 	}
 	.count h1 {
 		font-size: 6em; 
 		line-height: 1em; 
-		margin-top: 25%;
 		margin-bottom: 0;
 	}
 	.count h2 {
 		padding: 0;
 	}
 	.countlabel p {
-		font-size: 1.15em; 
+		font-size: 1.1em; 
 		text-align: right;
+		margin-bottom: 10px;
 	}	
 	
 /* Game List */
@@ -2163,13 +2169,13 @@ input, select, textarea {
 		
 		#releases .work-item {
 			min-width: 25%;
+			margin-top: 15px;
 		}
 		
 		#avatar img {
 			width: 100%;
 		}
-		
-		
+			
 		.games-counter {
 			max-width: 85%;
 			padding: 0;
@@ -2285,6 +2291,7 @@ input, select, textarea {
 			
 			#releases .work-item {
 				min-width: 50%;
+				margin-top: 30px;
 			}
 			
 			#releases .hiddenlist {
@@ -2310,8 +2317,8 @@ input, select, textarea {
 			}
 			
 			.countlabel p {
-				font-size: 1.1em;
-			}			
+				font-size: 1em;
+			}
 			
 		/* Poptrox */
 
