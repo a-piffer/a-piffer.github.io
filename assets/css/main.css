@@ -2276,10 +2276,17 @@ input, select, textarea {
 				text-align: justify;
 			}
 						
-			
 			.row {
 				padding-left: 10%;
 				padding-right: 10%;
+			}
+			
+			#featured .work-item {
+				margin-left: auto;
+				margin-right: auto;
+				padding: auto;
+				text-align: center;
+				
 			}
 			
 			#releases .row {
@@ -2302,8 +2309,11 @@ input, select, textarea {
 				margin-left: 1em;
 			}
 			
+			.count {
+				margin-left: auto;
+			}
+			
 			.count h1 {
-				margin-left: -17.50%;
 				font-size: 4em;
 			}
 			
@@ -2356,8 +2366,7 @@ input, select, textarea {
 			#avatar img {
 				max-width: 120px;
 			}
-			
-			
+						
 			.icon > .label {
 				padding-left: 0px;
 				margin-top: -10px;
