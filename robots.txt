@@ -3,3 +3,9 @@ Disallow: /resources/AndersonPiffer_CV.pdf
 Disallow: /resources/AndersonPiffer_CV.pdf
 Allow: /images/siteicon.jpg
 Disallow: /images
+
+User-agent: facebookexternalhit
+Disallow:
+
+User-agent: facebookexternalhit/1.1
+Disallow:
