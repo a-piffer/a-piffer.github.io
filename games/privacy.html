@@ -128,11 +128,11 @@
 <script type="text/javascript">
 	window.onload = function(){
 		let query = window.location.search;
-		let result = query.replace("?", "");
+		let result = query.replace("?game=", "");
 		result = result.replace("_", " ");		
-		
 		var elms = document.querySelectorAll("[id='appname']");
 		for(var i = 0; i < elms.length; i++) elms[i].innerHTML = result;
+		history.replaceState(null, document.getElementsByTagName("title")[0].innerHTML, window.location.pathname);
 	}
 </script>
 
