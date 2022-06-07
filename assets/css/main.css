@@ -2052,6 +2052,12 @@ input, select, textarea {
 		-webkit-transition: opacity .50s ease-in-out;
 	}
 	
+	@media screen and (max-width: 736px) {
+		.lazyimage {
+			height: 92%;
+		}
+	}
+	
 /* Game Counter */
 	.games-counter {
 		text-align:right;
