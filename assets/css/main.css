@@ -2030,6 +2030,7 @@ input, select, textarea {
 		top: 0;
 	}
 	.lazyvideo {
+		background: transparent;
 		border-radius: 0.35em;
 		border: 0;
 		display: inline-block;
@@ -2044,11 +2045,11 @@ input, select, textarea {
 		-webkit-transition: opacity .50s ease-in-out;
 	}
 	.lazyvideo.isFocus {
-		  background: transparent;
-		  opacity: 1;
-		  transition: opacity .50s ease-in-out;
-		  -moz-transition: opacity .50s ease-in-out;
-		  -webkit-transition: opacity .50s ease-in-out;
+		background: transparent;
+		opacity: 1;
+		transition: opacity .50s ease-in-out;
+		-moz-transition: opacity .50s ease-in-out;
+		-webkit-transition: opacity .50s ease-in-out;
 	}
 	
 /* Game Counter */
