@@ -1950,6 +1950,13 @@ input, select, textarea {
 		padding: 2px 7px;
 	}
 
+	@media screen and (max-resolution: 100dpi) {
+		#main {
+			width: 75%;
+			margin: auto;
+		}
+	}
+
 /* Header */
 	#major h2 {
 		font-size: 2em;	
