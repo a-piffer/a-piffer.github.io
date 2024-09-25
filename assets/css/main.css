@@ -1992,7 +1992,8 @@ input, select, textarea {
 	}
 	ul.bio-items li {
 		border-left-width: 0;
-		line-height: 1.8em;
+		line-height: 1.6em;
+		text-align: left;
 	}
 
 /* Header Buttons */
@@ -2290,16 +2291,11 @@ input, select, textarea {
 			#avatar img {
 				width: 100%;
 				max-width: 150px;
-				margin-top: -15px;
 				margin-bottom: 15px;
 			}
 						
 			#info h2 {
 				text-align: center;
-			}
-			
-			#info p {
-				text-align: justify;
 			}
 						
 			.row {
@@ -2391,6 +2387,19 @@ input, select, textarea {
 			
 			#avatar img {
 				max-width: 120px;
+			}
+
+			#info p {
+				padding: 0.5em; 
+			}
+
+			ul.bio-items li {
+				font-size: 0.9em;
+				padding-left: 0;
+				margin-top: 1.3em;
+				margin-bottom: 1.3em;
+				text-align: center;
+				list-style-type: none;
 			}
 						
 			.icon > .label {
