@@ -1954,6 +1954,7 @@ input, select, textarea {
 		#main {
 			width: 75%;
 			margin: auto;
+			font-size: 85%;
 		}
 	}
 
@@ -1975,12 +1976,23 @@ input, select, textarea {
 		width: 100%;
 		max-width: 280px;
 	}
+	#avatar img.rounded {
+	  object-fit: cover;
+	  border-radius: 50%;
+	}
 	#info {
 		max-width:65%; 
 		display: inline-block;
 	}
 	#info p a:hover {
 		opacity: 50%;
+	}
+	#bio, ul {
+		margin-bottom: 0.8em;
+	}
+	ul.bio-items li {
+		border-left-width: 0;
+		line-height: 1.8em;
 	}
 
 /* Header Buttons */
