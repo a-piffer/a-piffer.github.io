@@ -2029,8 +2029,11 @@ input, select, textarea {
 		margin: 0 0 1.5em 0;
 	}
 	.work-item h3 {
-		font-size: 1em;
+		font-size: 0.9em;
 		margin: 0 0 0.5em 0;
+	}
+	.work-item span {
+		font-size: 0.8em;
 	}
 	.work-item p {
 		font-size: 0.8em;
@@ -2093,7 +2096,7 @@ input, select, textarea {
 		padding: 0;
 	}
 	.countlabel p {
-		font-size: 1.1em; 
+		font-size: 1em; 
 		text-align: right;
 		margin-bottom: 10px;
 	}	
